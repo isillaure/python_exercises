@@ -21,7 +21,7 @@ def number_length(number):
     if isinstance(number, str):
         return 'Error'
     counter = 0
-    for i in str(number):
+    for i in str(number, int):
         counter += 1
     return counter
 
