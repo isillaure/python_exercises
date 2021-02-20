@@ -18,10 +18,12 @@
 # No se puede utilizar el método length
 
 def number_length(number):
-    if isinstance(number, str):
+    if not isinstance(number, int):
+        return 'Error'
+    elif number <= 0:
         return 'Error'
     counter = 0
-    for i in str(number, int):
+    for i in str(number):
         counter += 1
     return counter
 
